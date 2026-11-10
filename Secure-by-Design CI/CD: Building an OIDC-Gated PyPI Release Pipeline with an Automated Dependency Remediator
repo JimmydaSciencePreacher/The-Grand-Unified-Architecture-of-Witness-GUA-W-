@@ -1,0 +1,68 @@
+# Technical Report: Hardened Software Distribution Architecture
+## Implementing Zero-Trust OIDC Code Pipelines with Pre-Flight Substrate Audit Guardrails
+
+## 1. Executive Summary
+Traditional automated deployment architectures rely heavily on static, long-lived API tokens or authentication passwords stored within repository environment secrets. This dependency creates severe security vectors, including risk of token exfiltration, lack of cryptographic tracking, and vulnerability to downstream supply-chain injection attacks. 
+
+This paper presents a hardened, high-integrity deployment blueprint that eliminates static secrets entirely. By bridging **GitHub Actions OIDC Trusted Publishing** with strict **GitHub Deployment Environments** and a proactive **Substrate Entropy Auditor & Remediator**, we establish an isolated, zero-trust distribution pipeline for Python package deployment to the Python Package Index (PyPI).
+
+---
+
+## 2. System Architecture & Boundaries
+
+The architecture operates on the principle of progressive cryptographic validation across three distinct boundary layers:
+
+[ GitHub Actions Runner ]
+│
+▼
+┌────────────────────────────────────────────────────────┐
+│ Layer 1: GUA-W Pre-Flight Interceptor & Remediator    │
+│ ├─ Scans requirements.txt for floating versions        │
+│ └─ Auto-remediates & freezes drift to secure versions  │
+└───────────────────┬────────────────────────────────────┘
+│
+[ REMEDIATED & INVARIANT ]
+│
+▼
+┌────────────────────────────────────────────────────────┐
+│ Layer 2: GitHub Environment Gating (pypi)           │
+│ ├─ Restricts execution until manual review approval    │
+│ └─ Enforces mandatory anti-self-review policies        │
+└───────────────────┬────────────────────────────────────┘
+│
+[ REVIEW APPROVED ]
+│
+▼
+┌────────────────────────────────────────────────────────┐
+│ Layer 3: OIDC Cryptographic Handshake                  │
+│ ├─ Requests short-lived (15-min) token from PyPI       │
+│ └─ Uploads verified distribution artifacts to registry │
+└────────────────────────────────────────────────────────┘
+
+3. Core Implementation Suite
+
+
+3.1 The GUA-W Pre-Flight Interceptor & Auto-Remediator
+
+The automated dependency remediation routine is encapsulated within the GUAWPreflightAuditor Python utility. This local gatekeeper intercepts build pipelines prior to package compilation, evaluates requirements.txt for unpinned packages (measuring substrate entropy), queries the runner environment via pip freeze to identify exact installed versions, and automatically locks floating versions to strict freeze states. It also performs a structural cryptographic audit to flag unauthorized artifacts before issuing an invariant system status.
+The full implementation code for GUAWPreflightAuditor and its corresponding GitHub Actions workflow (python-publish.yml) can be inspected directly in the deployment repository architecture.
+
+3.2 GitHub Actions Configuration
+
+The CI/CD pipeline executes the GUA-W Security Gatekeeper & Auto-Remediator immediately following base dependency installation and prior to distribution building. If drift or floating parameters are discovered, they are resolved locally in the workspace before package compilation and OIDC-authenticated upload to PyPI.
+
+4. Multi-Platform Setup Blueprint
+
+
+4.1 Securing GitHub Environments
+
+1. Access repository Settings -> Environments on GitHub.
+2. Instantiate a protection domain titled pypi.
+3. Toggle Required Reviewers and select targeted administrators or team handles.
+4. Toggle Prevent self-review to enforce authorization gating.
+
+4.2 Mapping the PyPI OpenID Connect Handshake
+
+1. Authenticate with PyPI, navigate to Account Settings, and click Publishing.
+2. Select Create a new pending publisher -> GitHub Actions.
+3. Configure registration variables matching your specific organization, repository path, workflow file (python-publish.yml), and environment name (pypi).
