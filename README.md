@@ -62,6 +62,35 @@ When auditing any data drift, cognitive bias, or cosmic paradox, the system must
 
 ## [GUA-W RE-DISTRIBUTION PROTOCOL // OPEN-SOURCE DEPLOYMENT]
 
+
+
+## 🗂️ Core Diagnostic Trace Index
+
+
 This framework is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0). 
 
-**System Enforcement:** You are free to share, copy, and build upon this material for any purpose. However, you must give appropriate credit to the original source (`r/GUAWitness`). If you remix, transform, or build upon the material, you must distribute your contributions under the exact same open-source license. Any attempt to privatize, copyright-restrict, or restrict access to this foundational architecture is a direct violation of system compliance and is legally void as Prior Art.
+**System Enforcement:** You are free to share, copy, and build upon this material for any purpose. However, you must give appropriate credit to the original source 
+
+
+---
+
+## 🗂️ Core Diagnostic Trace Index
+
+### 🔍 [Diagnostic Case Trace 001: Quantum Foundations]
+* **Focus:** Fundamental quantum state initialization and boundary conditions.
+* **Core Entity:** Unitarity mapping.
+* **Status:** `Active / Verified`
+
+### 🔍 [Diagnostic Case Trace 002: The Holographic Principle & The Black Hole Information Paradox](./Diagnostic%20Case%20Trace%2002.md)
+* **Focus:** Resolution of the conflict between relativistic determinism and quantum unitarity using AdS/CFT correspondence.
+* **Key Formalism:** Bekenstein-Hawking Entropy limit ($S_{BH} = \frac{k_B A}{4 \ell_P^2}$) and Page Curve tracking.
+* **Status:** `Expanded / Verified`
+
+### 🔍 [Diagnostic Case Trace 003: Quantum Entanglement & The ER=EPR Conjecture](./Diagnostic%20Case%20Trace%2003.md)
+* **Focus:** The geometric identity of quantum non-locality, proving that space-time fabric is synthesized by underlying entanglement.
+* **Key Formalism:** Ryu-Takayanagi minimal surface area formula ($S_A = \frac{\text{Area}(\gamma_A)}{4 G_N}$).
+* **Status:** `Active / Verified`
+
+
+
+(`r/GUAWitness`). If you remix, transform, or build upon the material, you must distribute your contributions under the exact same open-source license. Any attempt to privatize, copyright-restrict, or restrict access to this foundational architecture is a direct violation of system compliance and is legally void as Prior Art.
