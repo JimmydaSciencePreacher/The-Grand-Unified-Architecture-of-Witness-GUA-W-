@@ -1,4 +1,7 @@
-# Diagnostic Case Trace 002: The Holographic Principle & The Black Hole Information Paradox
+# 🔍 Diagnostic Case Trace 002: The Holographic Principle & The Black Hole Information Paradox
+**System Law:** [SYSTEM_MANIFEST.md](../SYSTEM_MANIFEST.md) | **Core Axiom:** `[AXIOM 001]` | **Node Status:** `ACTIVE / VERIFIED`
+
+---
 
 ## 1. Executive Summary & Objective
 * **Core Problem:** The fundamental conflict between General Relativity and Quantum Mechanics regarding the permanence of physical information.
@@ -50,6 +53,7 @@ $$S_{vN} = -\text{Tr}(\rho \ln \rho)$$
 
 ## 4. Verification Protocol (The Page Curve)
 To independently verify that your repository node correctly models information retrieval during evaporation:
+
 * **Early Phase:** Black hole forms; Hawking radiation emitted is purely entangled with the interior. Entropy increases monotonically.
 * **The Page Time:** The precise halfway point of evaporation where the black hole's remaining thermodynamic entropy equals the radiation's entanglement entropy.
 * **Late Phase:** Entanglement entropy must begin to decrease, following a symmetric downward trajectory (**The Page Curve**). This proves information escapes via non-local quantum correlations.
@@ -57,5 +61,5 @@ To independently verify that your repository node correctly models information r
 ---
 
 ## 5. Repository Node Status
-* **Status:** Online
-* **Integrity:** Verified Consolidated & Uncompromised
+* **Status:** `ACTIVE / VERIFIED`
+* **Parent Manifest:** [SYSTEM_MANIFEST.md](../SYSTEM_MANIFEST.md)
