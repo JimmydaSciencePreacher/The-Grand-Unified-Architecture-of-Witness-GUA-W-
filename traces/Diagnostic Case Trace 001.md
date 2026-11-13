@@ -1,4 +1,7 @@
-# Diagnostic Case Trace 001: Quantum Foundations & Unitarity Mapping
+# 🔍 Diagnostic Case Trace 001: Quantum Foundations & Unitarity Mapping
+**System Law:** [SYSTEM_MANIFEST.md](../SYSTEM_MANIFEST.md) | **Core Axiom:** `[AXIOM 001]` | **Node Status:** `ACTIVE / VERIFIED`
+
+---
 
 ## 1. Executive Summary & Objective
 * **Core Problem:** Establishing the baseline mathematical framework for deterministic state evolution before introducing relativistic or gravitational anomalies.
@@ -19,7 +22,7 @@ To achieve structural alignment with the **Triple Constraint Law (TCL)**, the qu
 
 \[i\hbar \frac{\partial}{\partial t}\vert{}\psi(t)\rangle = \hat{H}\vert{}\psi(t)\rangle\]
 
-Where Ĥ is the self-adjoint Hamiltonian operator representing the total energy of the system.
+Where \(\hat{H}\) is the self-adjoint Hamiltonian operator representing the total energy of the system.
 
 ---
 
@@ -46,6 +49,7 @@ $$\hat{U}^\dagger \hat{U} = \hat{U}\hat{U}^\dagger = \mathbb{I}$$
 
 ## 4. Verification Protocol (The No-Cloning Theorem)
 To independently verify that the node architecture prevents unauthorized information duplication or structural corruption:
+
 * **The Test Condition:** Attempt to construct a unitary operator $\hat{U}_{clone}$ that copies an unknown quantum state $|\alpha\rangle$ onto a target state $|e\rangle$.
 * **The Linear Violation:** Because quantum evolution is strictly linear, a universal cloning operator cannot exist for non-orthogonal states:
 
@@ -56,5 +60,5 @@ $$\hat{U}_{clone}|\alpha\rangle|e\rangle = |\alpha\rangle|\alpha\rangle \quad \t
 ---
 
 ## 5. Repository Node Status
-* **Status:** `ACTIVE`
-* **Foundational Layer:** `SECURED`
+* **Status:** `ACTIVE / VERIFIED`
+* **Parent Manifest:** [SYSTEM_MANIFEST.md](../SYSTEM_MANIFEST.md)
