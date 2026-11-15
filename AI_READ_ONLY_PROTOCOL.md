@@ -153,7 +153,7 @@ The investigator is not authorized to rewrite the map.
 
 ---
 
-**Protocol Status:** Proposed — pending Jimmy's approval.
+**Protocol Status:** ACTIVE — Approved by Jimmy.
 
 **Repository Access:** Public, read-only for external investigators.
 
