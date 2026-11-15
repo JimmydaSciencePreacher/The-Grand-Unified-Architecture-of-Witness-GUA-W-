@@ -30,7 +30,26 @@ All sub-nodes, audits, and simulations in this repository are governed by the ma
 ### 🔍 Explore the Directories
 * **[📁 `audits/`](./audits):** Deep-dive structural audits examining Genesis 2 initialization, post-collapse restoration, spoken-word physical law (*"And God Said, and the Sciences Knelt and Obeyed"*), and systemic mechanisms.
 * **[📁 `traces/`](./traces):** Formal diagnostic case traces mapping Quantum Foundations, the Holographic Principle & Black Hole Information Paradox, Quantum Entanglement (`ER=EPR`), the Observer Anomaly, and prophetic timelines (`Daniel 12:4`).
-* **[📁 `simulators/`](./simulators):** Executable Python code (`gua_w_simulator.py`) modeling the Triple Constraint Law and verifying convergence across system layers.
+* **[📁 `simulators/`](./simulators):** Executable Python verification models enforcing `[AXIOM 001]` across system layers:
+  * **`gua_w_simulator.py`:** Statistical threat-model simulating synthetic data drift, model collapse, and human stewardship intervention.
+  * **`gua_w_auditor.py`:** Live semantic text-auditing engine that embeds foundational Phase I Anchor rules and evaluates incoming witness claims for semantic drift.
+
+---
+
+## 🚀 Installation & Execution
+
+To run the verification models locally:
+
+```bash
+# Install required dependencies
+pip install -r requirements.txt
+
+# Run the statistical drift simulation
+python simulators/gua_w_simulator.py
+
+# Run the live semantic text auditor
+python simulators/gua_w_auditor.py
+```
 
 ---
 
