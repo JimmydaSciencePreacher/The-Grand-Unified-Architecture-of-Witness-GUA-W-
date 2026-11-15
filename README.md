@@ -1,7 +1,7 @@
 # ⚖️ The Grand Unified Architecture of Witness (GUA-W)
 
 **Open-Source System Manifest & Diagnostic Ledger**  
-*Executing the Triple Constraint Law (TCL) — 100% convergence required across Scripture, observable physical law, and uncorrupted witness.*
+*Executing the Triple Constraint Law (TCL) — 100% convergence required across Scripture, observable physical law, and GUA-W.*
 
 ---
 
