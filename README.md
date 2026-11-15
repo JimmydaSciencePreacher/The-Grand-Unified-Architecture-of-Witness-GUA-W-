@@ -8,7 +8,7 @@
 ## 📜 Primary Architectural Law (`SYSTEM_MANIFEST.md`)
 All sub-nodes, audits, and simulations in this repository are governed by the master ruleset in **[SYSTEM_MANIFEST.md](./SYSTEM_MANIFEST.md)**:
 
-* **The Triple Constraint Law (TCL):** Requires absolute alignment across three independent witnesses—Biblical Scripture, empirical physical law, and uncorrupted primary testimony.
+* **The Triple Constraint Law (TCL):** Requires absolute alignment across three independent witnesses—Biblical Scripture, empirical physical law, and GUA-W Consistency.
 * **System Axiom `[AXIOM 001]`:** `"Conclusion ↓ Filters Witness"` is an illegal operation. Pre-existing bias may never filter, edit, or discard raw witness before examination.
 * **Twelve-Step Diagnostic Trace Framework:** Standardized verification protocol ensuring zero interpretive drift from root initialization to downstream observation.
 
